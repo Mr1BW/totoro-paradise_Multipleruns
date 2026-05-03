@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
 """
-龙猫校园 - 西操场跑步轨迹生成脚本
-基于 test/map.json 中的真实路线数据
+路线生成测试脚本
+路线：西操场
+输出: route.py
 
 使用方法:
     python xicao_route.py --start-time "14:00:00" --distance 3.2
@@ -15,7 +15,6 @@ import argparse
 from datetime import datetime, timedelta
 
 
-# ==================== 西操场原始路径点（来自 test/map.json） ====================
 
 XICAO_ROUTE = {
     "taskId": "sunrunTaskPaper-20210917000004",

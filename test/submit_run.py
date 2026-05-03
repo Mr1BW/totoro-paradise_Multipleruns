@@ -1,5 +1,6 @@
-#!/usr/bin/env python3
 """
+核心业务测试脚本
+
 Totoro Campus Run - Official API Submission
 Reads route.json and submits directly to app.xtotoro.com
 

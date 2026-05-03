@@ -222,5 +222,5 @@ session.json
 totoro-web/data/session.json
 
 session.json 
-routes/*
+totoro-web/data/routes/*
 */session.json 
