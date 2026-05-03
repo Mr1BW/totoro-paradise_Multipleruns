@@ -1,0 +1,687 @@
+{
+    "status": "00",
+    "msg": null,
+    "data": null,
+    "obj": null,
+    "body": null,
+    "obj1": null,
+    "resultMap": null,
+    "total": 0,
+    "wxLoginStatus": 0,
+    "msgList": [],
+    "message": null,
+    "code": "0",
+    "token": null,
+    "faceFlag": "0",
+    "startDate": "2026-03-09",
+    "endDate": "2026-06-26",
+    "startTime": "06:00",
+    "endTime": "23:00",
+    "offsetRange": "300",
+    "mileage": "3.20",
+    "fitDegree": "0.60",
+    "minSpeed": "3",
+    "maxSpeed": "15",
+    "minTime": "10",
+    "maxTime": "25",
+    "ifHasRun": "0",
+    "minWalkTotal": "0",
+    "maxWalkTotal": "0",
+    "runPointList": [
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20210917000004",
+            "pointName": "教学楼",
+            "longitude": "118.790107",
+            "latitude": "31.9367375",
+            "pointList": [
+                {
+                    "longitude": "118.789377",
+                    "latitude": "31.939196"
+                },
+                {
+                    "longitude": "118.789678",
+                    "latitude": "31.93925"
+                },
+                {
+                    "longitude": "118.790021",
+                    "latitude": "31.939232"
+                },
+                {
+                    "longitude": "118.790257",
+                    "latitude": "31.939123"
+                },
+                {
+                    "longitude": "118.790922",
+                    "latitude": "31.938559"
+                },
+                {
+                    "longitude": "118.791201",
+                    "latitude": "31.937703"
+                },
+                {
+                    "longitude": "118.791716",
+                    "latitude": "31.935809"
+                },
+                {
+                    "longitude": "118.792038",
+                    "latitude": "31.93468"
+                },
+                {
+                    "longitude": "118.789785",
+                    "latitude": "31.934225"
+                },
+                {
+                    "longitude": "118.78897",
+                    "latitude": "31.935791"
+                },
+                {
+                    "longitude": "118.788262",
+                    "latitude": "31.937065"
+                },
+                {
+                    "longitude": "118.788176",
+                    "latitude": "31.93814"
+                },
+                {
+                    "longitude": "118.788648",
+                    "latitude": "31.938832"
+                },
+                {
+                    "longitude": "118.789442",
+                    "latitude": "31.939214"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": null
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20210917000009",
+            "pointName": "田径场",
+            "longitude": "118.818946",
+            "latitude": "32.0325335",
+            "pointList": [
+                {
+                    "longitude": "118.818477",
+                    "latitude": "32.032922"
+                },
+                {
+                    "longitude": "118.819523",
+                    "latitude": "32.032799"
+                },
+                {
+                    "longitude": "118.819727",
+                    "latitude": "32.032663"
+                },
+                {
+                    "longitude": "118.81978",
+                    "latitude": "32.032463"
+                },
+                {
+                    "longitude": "118.819732",
+                    "latitude": "32.032336"
+                },
+                {
+                    "longitude": "118.81963",
+                    "latitude": "32.032217"
+                },
+                {
+                    "longitude": "118.81941",
+                    "latitude": "32.032136"
+                },
+                {
+                    "longitude": "118.818375",
+                    "latitude": "32.032263"
+                },
+                {
+                    "longitude": "118.818219",
+                    "latitude": "32.03234"
+                },
+                {
+                    "longitude": "118.818112",
+                    "latitude": "32.032477"
+                },
+                {
+                    "longitude": "118.818112",
+                    "latitude": "32.032709"
+                },
+                {
+                    "longitude": "118.818203",
+                    "latitude": "32.032845"
+                },
+                {
+                    "longitude": "118.818471",
+                    "latitude": "32.032931"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": null
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20210917000010",
+            "pointName": "图书馆",
+            "longitude": "118.8204025",
+            "latitude": "32.0343485",
+            "pointList": [
+                {
+                    "longitude": "118.817822",
+                    "latitude": "32.035854"
+                },
+                {
+                    "longitude": "118.823036",
+                    "latitude": "32.035272"
+                },
+                {
+                    "longitude": "118.822875",
+                    "latitude": "32.034226"
+                },
+                {
+                    "longitude": "118.823305",
+                    "latitude": "32.034171"
+                },
+                {
+                    "longitude": "118.823111",
+                    "latitude": "32.032807"
+                },
+                {
+                    "longitude": "118.8175",
+                    "latitude": "32.033462"
+                },
+                {
+                    "longitude": "118.817844",
+                    "latitude": "32.03589"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": null
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20210918000001",
+            "pointName": "天目湖-西操场",
+            "longitude": "119.4801785",
+            "latitude": "31.372601500000002",
+            "pointList": [
+                {
+                    "longitude": "119.480801",
+                    "latitude": "31.373201"
+                },
+                {
+                    "longitude": "119.480747",
+                    "latitude": "31.373476"
+                },
+                {
+                    "longitude": "119.480576",
+                    "latitude": "31.373522"
+                },
+                {
+                    "longitude": "119.480404",
+                    "latitude": "31.37354"
+                },
+                {
+                    "longitude": "119.480136",
+                    "latitude": "31.37354"
+                },
+                {
+                    "longitude": "119.47991",
+                    "latitude": "31.373513"
+                },
+                {
+                    "longitude": "119.479803",
+                    "latitude": "31.373357"
+                },
+                {
+                    "longitude": "119.479696",
+                    "latitude": "31.373119"
+                },
+                {
+                    "longitude": "119.47961",
+                    "latitude": "31.372853"
+                },
+                {
+                    "longitude": "119.479556",
+                    "latitude": "31.372606"
+                },
+                {
+                    "longitude": "119.479556",
+                    "latitude": "31.372359"
+                },
+                {
+                    "longitude": "119.479578",
+                    "latitude": "31.372084"
+                },
+                {
+                    "longitude": "119.479771",
+                    "latitude": "31.371855"
+                },
+                {
+                    "longitude": "119.480018",
+                    "latitude": "31.371763"
+                },
+                {
+                    "longitude": "119.480393",
+                    "latitude": "31.371699"
+                },
+                {
+                    "longitude": "119.480511",
+                    "latitude": "31.371663"
+                },
+                {
+                    "longitude": "119.480661",
+                    "latitude": "31.371763"
+                },
+                {
+                    "longitude": "119.480779",
+                    "latitude": "31.372121"
+                },
+                {
+                    "longitude": "119.480801",
+                    "latitude": "31.372597"
+                },
+                {
+                    "longitude": "119.480801",
+                    "latitude": "31.372954"
+                },
+                {
+                    "longitude": "119.480801",
+                    "latitude": "31.373302"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": null
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20210918000002",
+            "pointName": "天目湖-东操场",
+            "longitude": "119.488966",
+            "latitude": "31.3699095",
+            "pointList": [
+                {
+                    "longitude": "119.488998",
+                    "latitude": "31.368948"
+                },
+                {
+                    "longitude": "119.489181",
+                    "latitude": "31.368966"
+                },
+                {
+                    "longitude": "119.489363",
+                    "latitude": "31.369094"
+                },
+                {
+                    "longitude": "119.489513",
+                    "latitude": "31.36936"
+                },
+                {
+                    "longitude": "119.489524",
+                    "latitude": "31.370441"
+                },
+                {
+                    "longitude": "119.489395",
+                    "latitude": "31.37067"
+                },
+                {
+                    "longitude": "119.489223",
+                    "latitude": "31.370798"
+                },
+                {
+                    "longitude": "119.48902",
+                    "latitude": "31.370844"
+                },
+                {
+                    "longitude": "119.488869",
+                    "latitude": "31.370871"
+                },
+                {
+                    "longitude": "119.488676",
+                    "latitude": "31.370798"
+                },
+                {
+                    "longitude": "119.488483",
+                    "latitude": "31.370661"
+                },
+                {
+                    "longitude": "119.48843",
+                    "latitude": "31.370514"
+                },
+                {
+                    "longitude": "119.488419",
+                    "latitude": "31.369543"
+                },
+                {
+                    "longitude": "119.488408",
+                    "latitude": "31.369378"
+                },
+                {
+                    "longitude": "119.488505",
+                    "latitude": "31.36925"
+                },
+                {
+                    "longitude": "119.488633",
+                    "latitude": "31.369177"
+                },
+                {
+                    "longitude": "119.488698",
+                    "latitude": "31.369094"
+                },
+                {
+                    "longitude": "119.488805",
+                    "latitude": "31.369048"
+                },
+                {
+                    "longitude": "119.488966",
+                    "latitude": "31.368993"
+                },
+                {
+                    "longitude": "119.488998",
+                    "latitude": "31.368993"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": null
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20221012000001",
+            "pointName": "图书馆 将军路",
+            "longitude": "118.796185",
+            "latitude": "31.939359",
+            "pointList": [
+                {
+                    "longitude": "118.794506",
+                    "latitude": "31.940866"
+                },
+                {
+                    "longitude": "118.796309",
+                    "latitude": "31.940957"
+                },
+                {
+                    "longitude": "118.796738",
+                    "latitude": "31.940893"
+                },
+                {
+                    "longitude": "118.797521",
+                    "latitude": "31.940466"
+                },
+                {
+                    "longitude": "118.797832",
+                    "latitude": "31.940138"
+                },
+                {
+                    "longitude": "118.797875",
+                    "latitude": "31.939519"
+                },
+                {
+                    "longitude": "118.797832",
+                    "latitude": "31.938836"
+                },
+                {
+                    "longitude": "118.797896",
+                    "latitude": "31.938362"
+                },
+                {
+                    "longitude": "118.797403",
+                    "latitude": "31.938326"
+                },
+                {
+                    "longitude": "118.797274",
+                    "latitude": "31.938253"
+                },
+                {
+                    "longitude": "118.796652",
+                    "latitude": "31.938189"
+                },
+                {
+                    "longitude": "118.796437",
+                    "latitude": "31.937962"
+                },
+                {
+                    "longitude": "118.795557",
+                    "latitude": "31.937825"
+                },
+                {
+                    "longitude": "118.795043",
+                    "latitude": "31.937761"
+                },
+                {
+                    "longitude": "118.794957",
+                    "latitude": "31.937825"
+                },
+                {
+                    "longitude": "118.794892",
+                    "latitude": "31.93798"
+                },
+                {
+                    "longitude": "118.794839",
+                    "latitude": "31.938335"
+                },
+                {
+                    "longitude": "118.794474",
+                    "latitude": "31.940875"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": "sunrunLine-20221012000001"
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20221012000002",
+            "pointName": "田径场 将军路",
+            "longitude": "118.7950395",
+            "latitude": "31.936588999999998",
+            "pointList": [
+                {
+                    "longitude": "118.794753",
+                    "latitude": "31.93722"
+                },
+                {
+                    "longitude": "118.794865",
+                    "latitude": "31.937302"
+                },
+                {
+                    "longitude": "118.795005",
+                    "latitude": "31.937329"
+                },
+                {
+                    "longitude": "118.795128",
+                    "latitude": "31.937315"
+                },
+                {
+                    "longitude": "118.795327",
+                    "latitude": "31.937192"
+                },
+                {
+                    "longitude": "118.795386",
+                    "latitude": "31.937051"
+                },
+                {
+                    "longitude": "118.79545",
+                    "latitude": "31.936669"
+                },
+                {
+                    "longitude": "118.795509",
+                    "latitude": "31.936205"
+                },
+                {
+                    "longitude": "118.795488",
+                    "latitude": "31.936123"
+                },
+                {
+                    "longitude": "118.795418",
+                    "latitude": "31.935995"
+                },
+                {
+                    "longitude": "118.795354",
+                    "latitude": "31.935936"
+                },
+                {
+                    "longitude": "118.79523",
+                    "latitude": "31.935872"
+                },
+                {
+                    "longitude": "118.795069",
+                    "latitude": "31.935849"
+                },
+                {
+                    "longitude": "118.794941",
+                    "latitude": "31.935886"
+                },
+                {
+                    "longitude": "118.794774",
+                    "latitude": "31.935972"
+                },
+                {
+                    "longitude": "118.794683",
+                    "latitude": "31.936113"
+                },
+                {
+                    "longitude": "118.794619",
+                    "latitude": "31.936705"
+                },
+                {
+                    "longitude": "118.79457",
+                    "latitude": "31.936988"
+                },
+                {
+                    "longitude": "118.794592",
+                    "latitude": "31.937101"
+                },
+                {
+                    "longitude": "118.794629",
+                    "latitude": "31.937183"
+                },
+                {
+                    "longitude": "118.794774",
+                    "latitude": "31.93727"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": "sunrunLine-20221012000002"
+        },
+        {
+            "taskId": "sunrunTaskPaper-20210917000004",
+            "pointId": "sunrunLine-20230208000001",
+            "pointName": "西操场",
+            "longitude": "118.787194",
+            "latitude": "31.9390495",
+            "pointList": [
+                {
+                    "longitude": "118.786986",
+                    "latitude": "31.939762"
+                },
+                {
+                    "longitude": "118.787101",
+                    "latitude": "31.939769"
+                },
+                {
+                    "longitude": "118.787225",
+                    "latitude": "31.939753"
+                },
+                {
+                    "longitude": "118.787388",
+                    "latitude": "31.939659"
+                },
+                {
+                    "longitude": "118.787471",
+                    "latitude": "31.939543"
+                },
+                {
+                    "longitude": "118.787536",
+                    "latitude": "31.939336"
+                },
+                {
+                    "longitude": "118.787605",
+                    "latitude": "31.939079"
+                },
+                {
+                    "longitude": "118.787672",
+                    "latitude": "31.938851"
+                },
+                {
+                    "longitude": "118.787721",
+                    "latitude": "31.938694"
+                },
+                {
+                    "longitude": "118.78771",
+                    "latitude": "31.93861"
+                },
+                {
+                    "longitude": "118.787667",
+                    "latitude": "31.938503"
+                },
+                {
+                    "longitude": "118.787576",
+                    "latitude": "31.938412"
+                },
+                {
+                    "longitude": "118.787404",
+                    "latitude": "31.938342"
+                },
+                {
+                    "longitude": "118.787243",
+                    "latitude": "31.93833"
+                },
+                {
+                    "longitude": "118.78712",
+                    "latitude": "31.93836"
+                },
+                {
+                    "longitude": "118.78701",
+                    "latitude": "31.93843"
+                },
+                {
+                    "longitude": "118.786927",
+                    "latitude": "31.938533"
+                },
+                {
+                    "longitude": "118.786774",
+                    "latitude": "31.939052"
+                },
+                {
+                    "longitude": "118.786707",
+                    "latitude": "31.939277"
+                },
+                {
+                    "longitude": "118.786667",
+                    "latitude": "31.939427"
+                },
+                {
+                    "longitude": "118.786693",
+                    "latitude": "31.939543"
+                },
+                {
+                    "longitude": "118.786766",
+                    "latitude": "31.939662"
+                },
+                {
+                    "longitude": "118.786846",
+                    "latitude": "31.939721"
+                },
+                {
+                    "longitude": "118.78698",
+                    "latitude": "31.939764"
+                }
+            ],
+            "signLongitude": null,
+            "signLatitude": null,
+            "signQrcode": "sunrunLine-20230208000001"
+        }
+    ],
+    "runTimeRuleList": [
+        {
+            "startTime": "06:00",
+            "endTime": "23:00",
+            "runTimeType": null
+        }
+    ]
+}

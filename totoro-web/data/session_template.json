@@ -1,0 +1,86 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TotoroSession",
+  "description": "龙猫校园用户会话模板。微信登录成功后，服务端将填充此模板并保存到 session.json",
+  "type": "object",
+  "required": [
+    "stuNumber",
+    "token"
+  ],
+  "properties": {
+    "stuNumber": {
+      "type": "string",
+      "description": "学号，唯一标识学生"
+    },
+    "stuName": {
+      "type": "string",
+      "description": "学生姓名"
+    },
+    "schoolId": {
+      "type": "string",
+      "description": "学校 ID"
+    },
+    "schoolName": {
+      "type": "string",
+      "description": "学校名称"
+    },
+    "campusId": {
+      "type": "string",
+      "description": "校区 ID"
+    },
+    "campusName": {
+      "type": "string",
+      "description": "校区名称"
+    },
+    "collegeName": {
+      "type": "string",
+      "description": "学院名称"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "description": "绑定的手机号"
+    },
+    "token": {
+      "type": "string",
+      "description": "登录令牌，所有 API 请求的凭证"
+    },
+    "serverPath": {
+      "type": "string",
+      "description": "服务器地址",
+      "default": "https://app.xtotoro.com"
+    },
+    "path": {
+      "type": "string",
+      "description": "API 基础路径",
+      "default": "https://app.xtotoro.com"
+    },
+    "newsUrl": {
+      "type": "string",
+      "description": "新闻页面 URL"
+    },
+    "useUrl": {
+      "type": "string",
+      "description": "使用说明 URL"
+    },
+    "registerUrl": {
+      "type": "string",
+      "description": "注册页面 URL"
+    }
+  },
+  "example": {
+    "stuNumber": "xxxxxxxxx",
+    "stuName": "xxx",
+    "schoolId": "985xxxxx",
+    "schoolName": "xxxxxx大学",
+    "campusId": "xxx",
+    "campusName": "xxx",
+    "collegeName": "xxxxx学院",
+    "phoneNumber": "xxxxxxxxxxxx",
+    "token": "APxxxxxxxxxxxxxxxxxxxxx",
+    "serverPath": "https://app.xtotoro.com",
+    "path": "https://app.xtotoro.com",
+    "newsUrl": "https://admin.xtotoro.com/newsH5",
+    "useUrl": "https://admin.xtotoro.com/explainH5",
+    "registerUrl": "https://admin.xtotoro.com/regH5"
+  }
+}

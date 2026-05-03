@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Totoro Web - 龙猫校园</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐱 Totoro Web</h1>
+            <p>龙猫校园 Web 客户端</p>
+        </header>
+
+        <!-- 登录区域 -->
+        <section id="login-section" class="card">
+            <h2>微信扫码登录</h2>
+            <div id="qr-container">
+                <div id="qr-loading" class="loading">加载二维码...</div>
+                <img id="qr-image" src="" alt="微信二维码" style="display:none;"/>
+                <div id="qr-error" class="error" style="display:none;"></div>
+            </div>
+            <div id="login-actions" style="display:none;">
+                <p class="hint">请使用微信扫描二维码，然后点击下方按钮</p>
+                <button id="btn-check-scan" class="btn btn-primary">确认已扫码</button>
+                <button id="btn-refresh-qr" class="btn btn-secondary">刷新二维码</button>
+            </div>
+            <div id="login-status" class="status"></div>
+        </section>
+
+        <!-- 用户信息 -->
+        <section id="user-section" class="card" style="display:none;">
+            <h2>用户信息</h2>
+            <div class="user-info">
+                <div class="info-row">
+                    <span class="label">姓名：</span>
+                    <span id="user-name" class="value">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">学号：</span>
+                    <span id="user-number" class="value">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">学校：</span>
+                    <span id="user-school" class="value">-</span>
+                </div>
+                <div class="info-row">
+                    <span class="label">校区：</span>
+                    <span id="user-campus" class="value">-</span>
+                </div>
+            </div>
+            <button id="btn-logout" class="btn btn-danger">退出登录</button>
+        </section>
+
+        <!-- 跑步日历 -->
+        <section id="calendar-section" class="card" style="display:none;">
+            <h2>跑步日历</h2>
+            <div class="calendar-header">
+                <button id="btn-prev-month" class="btn btn-small">◀</button>
+                <span id="calendar-month-label" class="calendar-title">2026年5月</span>
+                <button id="btn-next-month" class="btn btn-small">▶</button>
+            </div>
+            <div class="calendar-legend">
+                <span class="legend-item"><span class="dot dot-run"></span>已跑步</span>
+                <span class="legend-item"><span class="dot dot-miss"></span>未跑步</span>
+                <span class="legend-item"><span class="dot dot-today"></span>今天</span>
+            </div>
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- 日历由 JS 生成 -->
+            </div>
+            <div id="calendar-summary" class="calendar-summary"></div>
+        </section>
+
+        <!-- 日志 -->
+        <section id="log-section" class="card">
+            <h2>操作日志</h2>
+            <div id="log-container" class="log-container"></div>
+            <button id="btn-clear-log" class="btn btn-small">清空日志</button>
+        </section>
+    </div>
+
+    <!-- 跑步/补跑弹窗 -->
+    <div id="makeup-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>跑步确认</h3>
+                <button id="btn-close-modal" class="btn btn-small">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>日期：<span id="modal-date"></span></p>
+                <p>状态：<span id="modal-status"></span></p>
+
+                <!-- 已跑步详情（只读） -->
+                <div id="modal-record-detail" style="display:none; margin-top: 12px; padding: 12px; background: var(--bg); border-radius: 8px;">
+                    <div class="info-row">
+                        <span class="label">跑步距离：</span>
+                        <span id="detail-mileage" class="value">-</span>
+                    </div>
+                    <div class="info-row" style="margin-top: 8px;">
+                        <span class="label">用时：</span>
+                        <span id="detail-used-time" class="value">-</span>
+                    </div>
+                    <div class="info-row" style="margin-top: 8px;">
+                        <span class="label">平均配速：</span>
+                        <span id="detail-avg-speed" class="value">-</span>
+                    </div>
+                    <div class="info-row" style="margin-top: 8px;">
+                        <span class="label">状态：</span>
+                        <span id="detail-status" class="value">-</span>
+                    </div>
+                </div>
+
+                <!-- 跑步表单（仅未跑步显示） -->
+                <div id="modal-run-form" style="margin-top: 12px;">
+                    <div class="info-row">
+                        <span class="label">路线：</span>
+                        <select id="modal-route-select" class="select"></select>
+                    </div>
+                    <div class="info-row" style="margin-top: 8px;">
+                        <span class="label">距离：</span>
+                        <span id="modal-distance">3.20 km</span>
+                    </div>
+                    <div class="info-row" style="margin-top: 8px;">
+                        <span class="label">开始时间：</span>
+                        <input type="time" id="modal-start-time" class="select" value="06:00">
+                    </div>
+                    <div class="info-row" style="margin-top: 8px;">
+                        <span class="label">跑步时长：</span>
+                        <input type="range" id="modal-duration" min="13" max="23" value="15" 
+                               style="width: 120px; vertical-align: middle;">
+                        <span id="modal-duration-label" style="margin-left: 8px; font-weight: 600;">15 分钟</span>
+                    </div>
+                    <div class="info-row" style="margin-top: 8px; font-size: 0.85rem; color: var(--text-secondary);">
+                        <span class="label">预计结束：</span>
+                        <span id="modal-end-time">06:15</span>
+                        <span style="margin-left: 12px;">(含 ±30s 随机波动)</span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-cancel-makeup" class="btn btn-secondary">关闭</button>
+                <button id="btn-confirm-makeup" class="btn btn-primary">确认跑步</button>
+            </div>
+            <div id="modal-result" class="status"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Totoro Web v0.1.0 | AGPL-3.0</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
