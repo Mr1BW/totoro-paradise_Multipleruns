@@ -21,14 +21,25 @@
 
 - **微信扫码登录**：通过二维码获取微信授权，自动完成登录流程
 - **跑步模拟**：生成 GPS 轨迹并提交跑步记录
+- **多次提交**：跑步记录不受限于今日，一天可跑步多次，产生多个不同日期的提交记录
 - **历史查询**：查看学期、月份、历史跑步记录
-
 
 ## 快速开始
 
-```bash
-cd totoro-web/
+### 下载项目
 
+```bash
+# git clone项目，或主页download zip
+git clone https://github.com/Mr1BW/totoro-paradise_Multipleruns.git
+
+# 进入到目录中
+cd totoro-paradise_Multipleruns/totoro-web/
+
+```
+
+### 方法一：使用uv安装依赖(推荐)
+
+```bash
 # 使用 uv 安装依赖
 uv sync
 
@@ -39,13 +50,32 @@ uv run python -m backend.main
 uv run uvicorn backend.main:app --reload --port 8000
 ```
 
+### 方法二：pip直接安装依赖
+
+```bash
+# 1. 创建虚拟环境（可选）
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# macOS / Linux:
+source .venv/bin/activate
+
+# 2. 安装依赖
+pip install fastapi "uvicorn[standard]" pydantic httpx cryptography
+
+# 3. 确保在totoro-web/目录下启动项目
+python -m backend.main
+```
+
 ## 跑步流程
 
-1. 访问 `http://localhost:8000`
+1. 启动后访问 `http://localhost:8000`
 2. 页面显示微信登录二维码
-3. 使用微信扫码
-4. 点击"确认登录"按钮
-5. 系统自动完成：
+3. 使用微信扫码，成果后自动跳转
+4. 确认个人信息无误，**校区信息显示为注册该账号的校区**
+5. 等待获取历史跑步信息，已跑的天数为绿，未跑的天数为红
 6. 选择日期，选择路线，时间点，系统自动跑步
 7. 日期选择无限制，可选择过去与未来，均能正常响应并产生跑步记录
+
+**注意学校规定的跑步开始日期与截止日期，系统不检查提交日期是否在规定范围内，但会产生跑步记录**
 
